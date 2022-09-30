@@ -1,6 +1,5 @@
 <html manifest="900v41.cache">
 <head>
-<meta charset="UTF-8" />
 <title>Leeful 9.00 v4.1U Mod By Kameleon</title>
 <link rel="shortcut icon" href="favicon.ico"></link>
 <style>
@@ -10,9 +9,9 @@ color:white;font-size:28px;text-align:center;margin:0;overflow:hidden;}
 </style>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Установка Оффлайн Кэша ... " + Percent + "%"};
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));msgs.innerHTML="Installing Offline Cache ... " + Percent + "%"};
 function DisplayCacheProgress(){
-setTimeout(function(){msgs.innerHTML="Кэш Успешно Установлен";},2000);
+setTimeout(function(){msgs.innerHTML="Cache Installed Successfully";},2000);
 setTimeout(function(){location.reload();},3000);
 }
 window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
